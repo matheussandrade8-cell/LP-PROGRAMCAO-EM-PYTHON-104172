@@ -1,13 +1,11 @@
-import os
-os.system ("cls")
+import os 
+os.system("cls")
 
-#Inicio
-idade =int(input("digite sua idade: "))
+numero1 =int(input("digite seu primeiro numero:"))
+numero2 = int(input("digite seu segundo numero:"))
+numero3 = int(input("digite seu tesceiro numero:"))
 
-#Processo
-if idade >= 18:
-    print("maior de idade")
+maior= max(numero1, numero2, numero3)
+menor= min(numero1, numero2, numero3)
 
-#Fim.
-print("fim.")
-
+print(f"o maior numero {maior} e o menor numero {menor}")

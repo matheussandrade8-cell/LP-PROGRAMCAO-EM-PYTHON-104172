@@ -1,12 +1,21 @@
 import os
-os.system ("cls")
+os.system("cls")
 
-#Inicio
-Salario =float(input("salario do fucionario: "))
+#inicio
+idade = int(input("digite sua idade:"))
 
-#Processo
-calculo=(Salario/1621)
+#Process
+if idade < 16:
+    voto= ("não pode voltar")
+elif idade <=17:
+    voto= ("voto opcional")
+else:
+    voto=("voto obrigatorio")
 
-#fim
-print("O funcionário ganha salarios minimos: ",calculo)
-print(f"O funcionário ganha {calculo:.2f} salários mínimos.")
+if idade >= 65:
+    voto= ("voto opcional")
+
+#fim.
+print(voto)
+
+
