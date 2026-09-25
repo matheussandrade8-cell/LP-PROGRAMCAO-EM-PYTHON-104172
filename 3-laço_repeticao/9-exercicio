@@ -1,0 +1,15 @@
+import os
+os.system("cls")
+
+print("Acumulando valores em variavel")
+soma=0
+
+print(f"Valor da variavel soma:{soma}")
+
+
+for i in range(3):
+    soma +=int(input("digite o numero pra somar:"))
+    #soma= soma + n
+    #print(f"Valor temporario da variavel soma:{soma}")
+
+print(f"valor final da variavel soma: {soma}")

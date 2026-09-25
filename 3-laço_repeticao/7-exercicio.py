@@ -8,3 +8,4 @@ for i in range(5):
     soma +=n
 
 print(f"a soma é {soma}:")
+
