@@ -34,7 +34,7 @@ while True:
             print("== Produto no estoque ==")
             for produto in lista_produto:
                 print(f"- {produto}")
-                print(f"total: {len(lista_produto)}")
+            print(f"total: {len(lista_produto)}")
 
 #update(atulizar dados)
         case 3:
