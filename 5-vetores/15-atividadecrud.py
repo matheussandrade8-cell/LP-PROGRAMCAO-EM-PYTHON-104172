@@ -32,12 +32,34 @@ while True:
             for produto in lista_paciente:
                 print(f"- {produto}")
             print(f"total: {len(lista_paciente)}")
+            #update(atulizar dados)
         case 3:
-            ...
+            print(" == Atualizar produto ==")
+            nome=input("Qual paciente deseja atualizar:").strip().upper()
+            if nome in lista_paciente:
+                posicao=lista_paciente.index(nome)
+                novo=input("Novo nome:")
+                lista_paciente[posicao]=novo
+                print("Paciente alterado com sucesso!")
+            else:
+                print("Paciente não encontrado.")
+                #delete(remover dados)
         case 4:
-            ...
+            print("= Remover paciente =")
+            nome=input("qual paciente deseja remover?:").strip().upper()
+            if nome in lista_paciente:
+                lista_paciente.remove(nome)
+                print("paciente removido!")
+            else:
+                print("paciente não encontrado")
+                #buscar
         case 5:
-            ...
+             print("= Buscar Paciente =")
+            nome=input("qual paciente deseja encontrar?:").strip().upper()
+            if nome in lista_paciente:
+                print("paciente encontrado!")
+            else:
+                print("paciente não encontrado")
         case 0:
             print("saindo do programa")
             break
