@@ -34,11 +34,11 @@ while True:
             print(f"total: {len(lista_paciente)}")
             #update(atulizar dados)
         case 3:
-            print(" == Atualizar produto ==")
+            print(" == Atualizar paciente ==")
             nome=input("Qual paciente deseja atualizar:").strip().upper()
             if nome in lista_paciente:
                 posicao=lista_paciente.index(nome)
-                novo=input("Novo nome:")
+                novo=input("Novo nome:").strip().upper()
                 lista_paciente[posicao]=novo
                 print("Paciente alterado com sucesso!")
             else:
@@ -54,7 +54,7 @@ while True:
                 print("paciente não encontrado")
                 #buscar
         case 5:
-             print("= Buscar Paciente =")
+            print("= Buscar Paciente =")
             nome=input("qual paciente deseja encontrar?:").strip().upper()
             if nome in lista_paciente:
                 print("paciente encontrado!")

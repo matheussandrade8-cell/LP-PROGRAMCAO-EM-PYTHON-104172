@@ -1,4 +1,4 @@
-import os 
+import os
 os.system("cls")
 
 lista_jogador=[]
@@ -14,14 +14,15 @@ while True:
 
     match opcao:
         case 1:
+            print("== cadastro da base Trabzonspor == ")
             nome_jogador=input("digite o nome do jogador:").strip().upper()
             numero_jogador=int(input("digite o numero do jogador:"))
             posicao_jogador=input("digite a posiçaõ do jogador:").strip().upper()
             if nome_jogador== "" or  numero_jogador== "" or posicao_jogador== "":
-                print("o nome do jogador deve ser inserido!")
+                print("o jogador deve ser registrado!")
             else:
                 lista_jogador.append(f"{nome_jogador}\n{numero_jogador}\n{posicao_jogador}")
-                input("Jogador com nome no BID com sucesso") 
+                input("Jogador registrado no BID com sucesso")
         case 2:
             print("= Lista de jogador =")
             for jogador in lista_jogador:
@@ -46,9 +47,9 @@ while True:
             nome=input("remova o jogador:")
             for item in lista_jogador:
                 if nome in item :
-                 lista_jogador.remove(nome)
-                 print(f"total: {len(lista_jogador)}")
-            print("jogador removido!")   
+                    lista_jogador.remove(nome)
+                print(f"total: {len(lista_jogador)}")
+            print("jogador removido!")
         case 0:
             print("saindo do programa.")
             break
